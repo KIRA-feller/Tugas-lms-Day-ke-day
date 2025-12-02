@@ -1,27 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dw link</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>INTRODUCTION</h1>
+  <div class="container">
+    <section class="profile">
+      <img src="kira_circle.png" alt="" width="100" height="100"> 
+      <h1>kira</h1>
+      <p>lecture | webdeveloper | hikmat</p>
+      <div class="sosials">
+        <a href="#">X</a>
+        <a href="#">IG</a>
+        <a href="#">FB</a>
+        <a href="#">GH</a>
+      </div>
 
-    <section>
-        <div>
-            <label for=""><h3>NAMA</h3></label>
-            <p>Muhamad Hikmat</p>
-
-            <label for=""><h3>TEMPAT/TANGGAL LAHIR</h3></label>
-            <p>Sukabumi/25-09-2005</p>
-
-            <label for=""><h3>PENDIDIKAN TERAKHIR</h3></label>
-            <p>SMKN 4 KOTA SUKABUMI JURUSAN TBSM</p>
-
-            <label for=""><h3>TENGTANG SAYA</h3></label>
-            <p>saya Muhamad Hikmat asal kota sukabumi jawa barat, pendidikan saya SMKN 4 KOTA, alasan saya belajar coding karena saya memiliki minat di dunia programers</p>
-        </div>
+      <ul class="link">
+        <li>
+          <img src="output_40x40_circle.png" alt="">
+          <span class="text">MY WEBSITE</span>
+          <span class="arrow">→</span>
+        </li>
+        <li>
+          <img src="output_40x40_circle.png" alt="">
+          <span class="text">MY PROFILE</span>
+          <span class="arrow">→</span>
+        </li>
+        <li>
+          <img src="output_40x40_circle.png" alt="">
+          <span class="text">NEWSLETTER</span>
+          <span class="arrow">→</span>
+        </li>
+      </ul>
     </section>
+
+    <section class="contact-form">
+      <h2>Contact Me</h2>
+      <label for="name">Your Name</label>
+      <input type="text" id="name">
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email">
+
+      <label for="message">Your Message</label>
+      <textarea id="message"></textarea>
+
+      <button>Send Message</button>
+    </section>
+  </div>
+
+  <footer>
+    Made by Kira | <a href="#">MUHAMAD HIKMAT</a>
+  </footer>
 </body>
 </html>
