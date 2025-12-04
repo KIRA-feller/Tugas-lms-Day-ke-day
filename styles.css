@@ -20,7 +20,6 @@ html, body {
 
 .bawah {
     width: auto;
-    display: flex;
 }
 
 .btn a{
@@ -122,3 +121,4 @@ html, body {
 .nav-link h4 {
     cursor: pointer;
 }
+
