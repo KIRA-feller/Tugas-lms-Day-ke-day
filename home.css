@@ -1,0 +1,155 @@
+body {
+    background-color: #d4d9df;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    box-sizing: border-box;
+}
+
+.item {
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.item h4{
+    text-align: left;
+    align-self: flex-start;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container p{
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+.contact {
+    width: 100%;
+    gap: 100px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact button{
+    border-radius: 10px;
+    background-color: black;
+    border: 1px solid white;
+    padding: 2px;
+    width: 100px;
+    color: white;
+}
+
+.contact a{
+    font-size: 15px;
+}
+
+
+.cv a{
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 30px;
+}
+
+.card {
+    transition: 0.3s;
+    margin: auto;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.sihitam {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nama h4{
+    font-size: small;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nama p{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn a {
+    text-decoration: none; 
+    color: black;     
+}
+
+.btn a:hover {
+    color: black; 
+}
+
+.d-flex {
+    margin-right: 20px; 
+}
+
+.btn.btn-outline-success:hover {
+    background-color: black !important;
+    color: white !important;
+}
+
+.btn-outline-success {
+    color: black;
+    border-color: black;
+}
+
+.btn a:hover {
+    color: white;
+}
+
+.navbar-brand img {
+    height: 30px;
+    width: auto;
+}
+
+.navbar-brand {
+    margin-left: 20px;
+}
+
+.navbar-nav {
+    margin-left: 40px; 
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-link h5 {
+    font-size: 15px;
+    color: black;
+}
+
+.nav-link h4 {
+    font-size: 18px;
+}
+
+.nav-link h4:hover {
+    cursor: pointer;
+}
