@@ -28,13 +28,13 @@ document.getElementById("home").addEventListener("click", function() {
     window.location.href = "home.html"; 
 });
 
-document.getElementById("proyekkuli").addEventListener("click", function() {
-    window.location.href = "index.html"; 
-});
+// document.getElementById("proyekkuli").addEventListener("click", function() {
+//     window.location.href = "index.html"; 
+// });
 
-document.getElementById("home2").addEventListener("click", function() {
-    window.location.href = "uji.html"; 
-});
+// document.getElementById("home2").addEventListener("click", function() {
+//     window.location.href = "uji.html"; 
+// });
 
 
 
@@ -75,4 +75,5 @@ form.addEventListener("submit", function (e) {
   list.appendChild(card);
   form.reset();
 });
+
 
