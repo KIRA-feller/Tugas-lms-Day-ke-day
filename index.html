@@ -3,25 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
-    <h1>INTRODUCTION</h1>
 
-    <section>
-        <div>
-            <label for=""><h3>NAMA</h3></label>
-            <p>Muhamad Hikmat</p>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand"><img style="width: 30px;" src="https://pm1.aminoapps.com/6435/b2707c0f1adbcd472af0be82e5f46b3f4dd4cbbb_hq.jpg" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a id="home" class="nav-link active" aria-current="page"><h4>Home</h4></a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+    <button id="icikiwir" class="btn btn-outline-success" type="button">
+        Contact Me
+    </button>
+</form>
+    </div>
+  </div>
+    </nav>
 
-            <label for=""><h3>TEMPAT/TANGGAL LAHIR</h3></label>
-            <p>Sukabumi/25-09-2005</p>
+    <div class="container" id="addProject">
 
-            <label for=""><h3>PENDIDIKAN TERAKHIR</h3></label>
-            <p>SMKN 4 KOTA SUKABUMI JURUSAN TBSM</p>
+        <div class="atas">
 
-            <label for=""><h3>TENGTANG SAYA</h3></label>
-            <p>saya Muhamad Hikmat asal kota sukabumi jawa barat, pendidikan saya SMKN 4 KOTA, alasan saya belajar coding karena saya memiliki minat di dunia programers</p>
+            <!-- ADD PROJECT FORM -->
+  <div class="container form-container">
+    <h2 class="text-center fw-bold mb-5">ADD MY PROJECT</h2>
+
+    <form id="projectForm">
+  <!-- Project Name -->
+  <label class="fw-semibold">Project Name</label>
+  <input id="projectName" type="text" class="form-control mb-3" placeholder="Name">
+
+  <!-- Description -->
+  <label class="fw-semibold">Description</label>
+  <textarea id="description" class="form-control mb-3" rows="4"></textarea>
+
+  <!-- Technologies -->
+  <label class="fw-semibold">Source darimana</label>
+  <div class="row mb-3">
+    <div class="col-6">
+      <input id="tech-node" type="checkbox" class="form-check-input"> Nyolong di Fesnuk
+    </div>
+    <div class="col-6">
+      <input id="tech-next" type="checkbox" class="form-check-input"> Nyomot di Google
+    </div>
+    <div class="col-6 mt-2">
+      <input id="tech-react" type="checkbox" class="form-check-input"> Hasil Screenshot
+    </div>
+    <div class="col-6 mt-2">
+      <input id="tech-ts" type="checkbox" class="form-check-input"> Fosil di Galeri
+    </div>
+  </div>
+
+  <!-- Image Upload -->
+  <label class="fw-semibold">Upload gambars</label>
+  <br>
+  <input id="projectImage" type="file" class="form-control mb-5">
+
+  <button type="submit" class="btn btn-dark-round text-white mx-auto d-block">
+    <section class="submit">Submit</section>
+  </button>
+</form>
+  </div>
+
+
         </div>
-    </section>
+
+        <div class="bawah">
+
+            <!-- MY PROJECT CARDS -->
+  <div class="container py-5">
+    <h2 class="fw-bold text-center mb-5">MY PROJECT</h2>
+
+    <div class="row g-4" id="projectList">
+      
+      <!-- CARD EXAMPLE (Kamu bisa duplicate untuk banyak project) -->
+      <div class="col-md-4">
+        <div class="card shadow-sm project-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgpP2keZ6HOtd8dchEW8oqwnWV39rpSxfnpA&s" class="card-img-top" alt="project">
+          <div class="card-body">
+            <h5 class="fw-bold">Kira Yoshikage</h5>
+            <p class="mb-0">Fullstack Developers</p>
+            <p class="text-secondary small">Murid Dumbways</p>
+
+            <!-- icons -->
+            <div class="d-flex gap-3 mb-3">
+              <i class="bi bi-playstation"></i>
+              <i class="bi bi-android2"></i>
+              <i class="bi bi-github"></i>
+            </div>
+
+            <!-- buttons -->
+            <div class="hitam">
+              <button class="hitamlegam">Delete</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+ </div>
 </body>
+  <script src="index.js"></script>
 </html>
