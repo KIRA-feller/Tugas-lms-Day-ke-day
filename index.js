@@ -10,7 +10,7 @@ app.get("/home", (req, res) => {
     let nama = "muhamad Hikmat";
     let lahir = "25/09/2005";
     let tinggal = "Kota sukabumi"
-  res.render("index", {nama, lahir, tinggal});
+  res.render("intro", {nama, lahir, tinggal});
 });
 
 app.listen(port, () => {
