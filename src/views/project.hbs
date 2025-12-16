@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/prost.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <title>Project</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand"><img style="width: 30px;" src="https://pm1.aminoapps.com/6435/b2707c0f1adbcd472af0be82e5f46b3f4dd4cbbb_hq.jpg" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/"><h4>Home</h4></a>
+        </li>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container">
+  <div class="atas">
+
+    <div class="container form-container">
+      <h2 class="text-center fw-bold mb-5">ADD MY PROJECT</h2>
+
+      <form action="/project" method="post">
+        <label class="fw-semibold">Project Name</label>
+        <input name="project_name" type="text" class="form-control mb-3" placeholder="Name">
+
+        <label class="fw-semibold">Description</label>
+        <textarea name="deskripsi" class="form-control mb-3" rows="4"></textarea>
+
+        <div class="row mb-3 g-3">
+          <div class="col-md-6">
+            <label class="fw-semibold">Start Date</label>
+            <input type="date" name="startdate" class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label class="fw-semibold">End Date</label>
+            <input type="date" name="endDate" class="form-control">
+          </div>
+        </div>
+
+        <label class="fw-semibold">Technologies</label>
+        <div class="row mb-3">
+          <div class="col-6">
+            <input type="checkbox" name="tech[]" value="Node Js" class="form-check-input"> Node Js
+          </div>
+          <div class="col-6">
+            <input type="checkbox" name="tech[]" value="React Js" class="form-check-input"> React Js
+          </div>
+          <div class="col-6">
+            <input type="checkbox" name="tech[]" value="Next Js" class="form-check-input"> Next Js
+          </div>
+          <div class="col-6">
+            <input type="checkbox" name="tech[]" value="Type Script" class="form-check-input"> Type Script
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-dark-round text-white mx-auto d-block"> <section class="submit">Submit</section>
+       </button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- ================= BAWAH ================= -->
+  <div class="bawah">
+    <div class="container py-5">
+      <h2 class="fw-bold text-center mb-5">MY PROJECT</h2>
+
+      <!-- DETAIL -->
+      {{#if detail}}
+      <div class="card p-3 mb-4 shadow">
+        <h4 class="fw-bold">{{detail.name}}</h4>
+        <p>{{detail.description}}</p>
+        <p>
+          <strong>Duration:</strong><br>
+          {{formatDate detail.start_date}} - {{formatDate detail.end_date}}
+        </p>
+        <p>
+          <strong>Technologies:</strong><br>
+          {{detail.technologies}}
+        </p>
+      </div>
+      {{/if}}
+
+      <!-- LIST PROJECT -->
+      <div class="row g-4">
+        {{#each projects}}
+        <div class="col-md-4">
+          <div class="card p-3 shadow">
+
+            <h5 class="fw-bold">{{this.name}}</h5>
+
+            <p class="text-muted">{{this.description}}</p>
+
+            <p>
+              <strong>Duration:</strong><br>
+              {{formatDate this.start_date}} - {{formatDate this.end_date}}
+            </p>
+
+            <p>
+              <strong>Technologies:</strong><br>
+              {{this.technologies}}
+            </p>
+
+            <div class="d-flex gap-2 mt-3">
+              <a href="/project?id={{this.id}}" class="btn btn-sm btn-primary">Detail</a>
+
+              <form action="/project/delete/{{this.id}}" method="post">
+                <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+        {{/each}}
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
