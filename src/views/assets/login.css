@@ -1,0 +1,44 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+        /* Background gambar */
+.bg-login {
+    background-image: url('https://i.pinimg.com/1200x/6c/78/a4/6c78a47ae00b4cfcf57b4792395e52c9.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+        /* Card login */
+.login-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    background-image: url('https://i.pinimg.com/736x/19/2c/4b/192c4bf94ab8b0ace0c156792fddf57c.jpg');
+    background-size: cover;
+}
+
+.login-card h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.btn-login {
+    background-color: #007bff;
+    color: rgb(0, 0, 0);
+}
+
+.btn-login:hover {   
+     background-color: #ffffff;
+}
