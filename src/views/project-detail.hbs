@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{project.name}}</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container py-5">
+
+  <a href="/project" class="btn btn-secondary mb-4">← Back</a>
+
+  <div class="card p-3 shadow">
+    <div class="row g-3 align-items-center">
+      <!-- Gambar di kiri -->
+      <div class="col-md-6">
+        {{#if project.img}}
+          <img src="/assets/uploads/{{project.img}}" alt="{{project.name}}" class="img-fluid rounded">
+        {{/if}}
+      </div>
+
+      <!-- Date & Technologies di kanan -->
+      <div class="col-md-6">
+        <div class="border rounded p-3 h-100">
+          <p>
+            <strong>Duration</strong><br>
+            {{formatDate project.start_date}} - {{formatDate project.end_date}}
+          </p>
+
+          <p>
+            <strong>Technologies</strong><br>
+            {{project.technologies}}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nama dan Deskripsi di bawah -->
+    <div class="mt-4">
+      <h2 class="fw-bold">{{project.name}}</h2>
+      <p class="fs-5">{{project.description}}</p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
