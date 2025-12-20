@@ -1,0 +1,124 @@
+/* ===== PROJECT SECTION ===== */
+.projects-section {
+  margin-top: 5rem;
+}
+
+.projects-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+/* GRID */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+}
+
+/* CARD */
+.project-card {
+  background-color: #f8fafc;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.1);
+}
+
+/* DARK MODE */
+[data-bs-theme="dark"] .project-card {
+  background-color: #0d1117;
+}
+
+/* IMAGE */
+.project-image {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image img {
+  max-width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* GRADIENTS */
+.gradient-atas {
+  background: linear-gradient(135deg, #181818, #fd3333);
+}
+
+.gradient-bawah {
+  background: linear-gradient(135deg, #2c2c2c, #f0f2f3);
+}
+
+/* CONTENT */
+.project-content {
+  padding: 1.8rem;
+}
+
+.project-content h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.project-content p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+/* DARK TEXT */
+[data-bs-theme="dark"] .project-content p {
+  color: #c9d1d9;
+}
+
+/* TAGS */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.2rem 0;
+}
+
+.project-tags span {
+  font-size: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background-color: #e5e7eb;
+  font-weight: 500;
+}
+
+/* DARK TAGS */
+[data-bs-theme="dark"] .project-tags span {
+  background-color: #161b22;
+}
+
+/* LINKS */
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.project-links .private {
+  color: #6b7280;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
