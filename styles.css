@@ -1,0 +1,123 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+.container {
+    box-sizing: border-box;
+     justify-content: center;
+    flex-wrap: wrap;
+}
+
+.atas {
+   background-color: #d4d9df;
+   padding: 10px;
+   color: black;
+   background-color: #d4d9df;
+}
+
+.bawah {
+    width: auto;
+}
+
+.btn a{
+    text-decoration: none; 
+    color: black;     
+}
+
+.btn a:hover {
+    color: black; 
+}
+
+.d-flex {
+    margin-right: 20px; 
+}
+
+.btn.btn-outline-success:hover {
+    background-color: black !important;
+    color: white !important;
+}
+
+.btn-outline-success {
+    color: rgb(0, 0, 0) !important;
+    border-color: rgb(0, 0, 0) !important;
+}
+
+.btn a:hover {
+    color: white;
+}
+
+.navbar-brand img {
+    height: 30px;
+    width: auto;
+}
+
+.navbar-brand {
+    margin-left: 20px;
+}
+
+.navbar-nav {
+    margin-left: 40px; 
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-link h5 {
+    font-size: 15px;
+}
+
+.nav-link h4 {
+    font-size: 18px;
+}
+
+.submit {
+    color: white;
+    border: 1px solid black;
+    background-color: black;
+    padding: 3px;
+    border-radius: 10px;
+    width: 80px;
+}
+
+.col-md-4 h5{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.mb-0 {
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.small {
+    align-items: center;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.hitam {
+    display: flex;
+    justify-content: center;
+}
+
+
+.hitamlegam {
+    padding: 10PX;
+    background-color: red;
+    border: 1px solid black;
+
+}
+
+.nav-link h4 {
+    cursor: pointer;
+}
